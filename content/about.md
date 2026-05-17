@@ -2,6 +2,7 @@
 date = '2026-05-11T23:36:14+02:00'
 draft = false
 title = 'About'
+toc = true
 +++
 
 ## From finance to ML and Computer Vision
@@ -20,7 +21,7 @@ people there and my passion for Computer Vision grew stronger. We were lucky
 enough to publish a few papers in the process.
 
 Nowadays I work with satellite imagery, still developping deep-learning models
-and still having alot of fun !
+and still having a lot of fun !
 
 ## Computer Science
 

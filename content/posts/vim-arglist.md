@@ -2,6 +2,7 @@
 date = '2026-05-11T23:00:45+02:00'
 draft = false
 title = 'Easy navigation in native Vim'
+toc = true
 +++
 
 ## Introduction

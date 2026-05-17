@@ -69,6 +69,8 @@ series = "series"
 unsafe = true
 
 [markup]
+  [markup.highlight]
+    style = "catppuccin-mocha"
 
   # Table of contents
   # Add toc = true to content front matter to enable
