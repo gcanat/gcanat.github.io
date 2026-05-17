@@ -21,10 +21,16 @@ argument list (`:h arglist`).
 ## Exploring the file tree
 
 When I explore a new codebase, I like to start by browsing the file structure
-with `netrw` to get a sense of the organisation. With `15Lex` for example to
+with `netrw` to get a sense of the organisation. With `:15Lex` for example to
 get a window styled in the same manner as some other file tree plugins.
 Once I'm comfortable with the file tree structure I barely use `netrw`, hence
-why I feel I dont need an external file tree plugin.
+why I feel I dont need an external file tree plugin. Here's my config to make
+it look nicer (to my taste):
+```vim
+let g:netrw_banner = 0 | let g:netrw_browse_split = 4
+let g:netrw_altv = 1 | let g:netrw_liststyle = 3
+let g:netrw_list_hide = ',\(^\|\s\s\)\zs\.\S\+,.*\.swp$,.*\.un~$,.git,target'
+```
 
 ## Edit and find
 
