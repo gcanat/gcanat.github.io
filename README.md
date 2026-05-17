@@ -1,3 +1,3 @@
 # GCGC
 
-My personal blog/website
+https://gcanat.github.io/
