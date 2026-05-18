@@ -7,4 +7,4 @@ I might also throw in a few posts about my favorite editor: **Vim** ;-)
 
 ## Latest articles
 
-- [Easy navigation in native Vim](posts/vim-arglist)
+- [Easy navigation in native Vim](posts/vim-easy-nav)
