@@ -16,7 +16,7 @@ Before LSP was a thing, [tags](https://vimhelp.org/tagsrch.txt.html#tags) were
 already there to help us navigate a codebase and we also have the `:compiler`
 command to run linters and populate the quickfix list with errors.
 Before fuzzy finders were all the rage, we already had `:edit`, `:find` and the
-argument list (`:h arglist`).
+[argument list](https://vimhelp.org/editing.txt.html#arglist).
 
 ## Exploring the file tree
 
@@ -81,18 +81,33 @@ different windows (and therefore different tabs as well). Files are grouped
 together where it makes sense: documentation only, CI/CD, some particular
 module in the codebase, etc.
 
+Now, it does not matter if you are working in a giant repository like the linux
+kernel, you can select what you want to add to the different local arglists and
+instantly navigate between files, instead of relying on a command that would
+scan through the entire codebase each time.
+
 Another cool functionality of the arglist is to be able to execute commands on
 all files in the arglist, with `:argdo`. So dont forget to also have a look at
 `:h argdo`.
 
-Side note, you can do something similar in the quickfix list with
-`:cdo`. For example, we can populate the quickfix list with some `:grep` search
-and perform substitution with something like `:cdo s/<pattern>/<replace>/`.
+Side note, you can do something similar in the quickfix list with `:cdo`.
+For example, we can populate the quickfix list with some `:grep` search and
+perform substitution with something like `:cdo s/<pattern>/<replace>/`.
 Speaking of `grep`, we can search only the files in the arglist this way
 `:grep /<pattern>/ ##`.
 
 ## Final thoughts
 
+Some plugins claim to help you switch between files faster (harpoon?),
+but guess what, you can already do this with
+[marks](https://vimhelp.org/motion.txt.html#mark-motions). Set a mark on a file
+with `mA` (replace A with any capital letter or digit of your choice), then you can
+instantly come back to this file with `'A` or `` `A``.
+
 Once I am satisfied with the organisation of the files and windows I can save
 the session with `:mksession`, so I dont have to redo it next time I work on
 this code.
+
+So in the end, I think plugins like fuzzy finders, file trees and buffer switchers
+mainly provide fancier UI, but most of the raw functionalities already exists in
+Vim.
